@@ -1,0 +1,59 @@
+The following video frames are extracted from a football match. Analyze the frames and identify the presence of any of the following tactical concepts in the video. Focus your analysis solely on the team wearing {TEAM_COLOR}. Ignore actions and tactics performed by the opposing team:
+
+* Build up
+* Progression
+* Final Third
+* Attacking Wing Play
+* High Press
+* Medium Press
+* Low Block
+* Defending Wing Play
+* Attacking Transition
+* Defending Transition
+* Defending Goalkeeper
+* Attacking Goalkeeper
+* Box Attacking
+* Box Defending
+* Attacking Corner
+* Defending Corner
+* Attacking Direct Freekick
+* Defending Direct Freekick
+* Attacking Indirect Freekick
+* Defending Indirect Freekick
+* Attacking Through Ball
+* Defending Through Ball
+* Attacking Long Goalkeeper
+* Defending Long Goalkeeper
+* Kick Off
+
+For each concept, return a confidence score between 0.0 and 1.0 representing the likelihood of that concept being present in the analyzed frames. Return the results in the following JSON format:
+
+{
+  "build_up": 0.0,
+  "progression": 0.0,
+  "final_third": 0.0,
+  "attacking_wing_play": 0.0,
+  "high_press": 0.0,
+  "medium_press": 0.0,
+  "low_block": 0.0,
+  "defending_wing_play": 0.0,
+  "attacking_transition": 0.0,
+  "defending_transition": 0.0,
+  "defending_goalkeeper": 0.0,
+  "attacking_goalkeeper": 0.0,
+  "box_attacking": 0.0,
+  "box_defending": 0.0,
+  "attacking_corner": 0.0,
+  "defending_corner": 0.0,
+  "attacking_direct_freekick": 0.0,
+  "defending_direct_freekick": 0.0,
+  "attacking_indirect_freekick": 0.0,
+  "defending_indirect_freekick": 0.0,
+  "attacking_through_ball": 0.0,
+  "defending_through_ball": 0.0,
+  "attacking_long_goalkeeper": 0.0,
+  "defending_long_goalkeeper": 0.0,
+  "kick_off": 0.0
+}
+
+Only return the JSON file with the confidence values for each concept.
